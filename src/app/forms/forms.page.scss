@@ -1,0 +1,27 @@
+#main-container{
+
+    width: 100%;
+}
+
+
+ion-row{
+
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    height: 90vh;
+}
+
+#signup-bttn{
+    
+  width: 80%;
+  --border-radius: 5px;
+  --background: #64CCC5;
+  font: normal 14px Poppins;
+}

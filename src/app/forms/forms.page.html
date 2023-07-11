@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>forms</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Forms</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid id = "main-container">
+
+    <ion-row>
+      <ion-col id ="login-form">
+        <ion-label> FIll up</ion-label>
+        <ion-input  label="Fullname" type="text" label-placement="floating" placeholder="Enter your Fullname"></ion-input>
+        <ion-input  label="Email" type="mail" label-placement="floating" placeholder="Enter your Email"></ion-input>
+        <ion-input  label="Confirm Password" type="password" label-placement="floating" placeholder="Confirm Password"></ion-input>
+        <ion-button id ="signup-bttn">COnfirm</ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid> 
+</ion-content>
