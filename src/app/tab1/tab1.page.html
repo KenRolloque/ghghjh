@@ -1,56 +1,87 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Dashboard</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-grid>
+  <ion-row id ="header">
+    <ion-img src ="../../assets/image/logo.png"></ion-img>
+    <h5>Conde Labac Integrated School</h5>
+  </ion-row>
 
-<ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Dashboard</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <br>
-
-  <ion-button class="enrollment" size="large" fill="outline" routerLink="/dashboard/enrollment">
-    <ion-icon name="person-add-outline" slot="start"></ion-icon>
-    Enrollment
-  </ion-button>
-   -->
-  <!-- <ion-grid>
-    <ion-row>
-      <ion-col col-6>
-        <ion-button class="Schedule" size="large" fill="outline" routerLink="/dashboard/schedule">
-          <ion-icon name="calendar-outline" slot="start"></ion-icon>Schedule</ion-button>
-      </ion-col>
-      <ion-col col-6>
-        <ion-button class="forms" size="large" fill="outline" routerLink="/dashboard/forms">
-          <ion-icon name="newspaper-outline" slot="start"></ion-icon>Forms</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
-  <br>
-  <br>
-  <ion-item class="event" lines="inset">  
-    <ion-label>Upcoming Events</ion-label>
-  </ion-item>
-  <ion-card>
-    <ion-card-header class="card">
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+  <ion-row id="button-cont"> 
+      <!-- <div> Vision, Mission, and Core Values</div> -->
+      <!-- <div  [ngClass]="{'highlighted': hideMission}" (click) = "showMission()"> Mission</div> -->
+      <ion-button [ngClass]="{'highlighted': hideMission}" (click) = "showMission()">
+        <p>Mission</p>
+        </ion-button>
+      <ion-button [ngClass]="{'highlighted': hideVision}" (click) = "showVision()"> 
+        Vision
+      </ion-button>
+      <ion-button [ngClass]="{'highlighted': hideCore}" (click) = "showCore()"> 
+        Core Value
+      </ion-button>
   
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
+      
+      <!-- <div (click) = "showVision()"> Vision</div>
+      <div (click) = "showCore()"> Core Values</div> -->
+   
+  </ion-row>
 
-  <ion-card>
-    <ion-card-header class="card">
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+  <ion-row id ="mission-cont" *ngIf = "hideMission">
+    <div>
+     <h5>MISSION</h5> 
+     <p>To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where:
+      Students learn in a child-friendly, gender-sensitive, safe, and motivating environment.
+      Teachers facilitate learning and constantly nurture every learner.
+      Administrators and staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen.
+      Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</p>
+  </div>
+  </ion-row>
+
+
+  <ion-row id ="mission-cont" *ngIf = "hideVision" >
+    <div>
+     <h5>VISION</h5> 
+     <p>
+      We dream of Filipinos 
+      who passionately love their country 
+      and whose values and competencies  
+      enable them to realize their full potential 
+      and contribute meaningfully to building the nation.
+      
+      As a learner-centered public institution, 
+      the Department of Education 
+      continuously improves itself 
+      to better serve its stakeholders. </p>
+  </div>
+  </ion-row>
+
+  <ion-row id ="core-cont" *ngIf = "hideCore">
+    <div>
+     <h5>Core Values</h5> 
+      <h4>Maka-Diyos</h4>
+      <h4>Maka-tao</h4>
+      <h4>Makakalikasan</h4>
+      <h4>Makabansa</h4>
+  </div>
+  </ion-row>
+
+  <ion-row id ="content">
+    <div>
+      <ion-img id ="building"src ="../../assets/image/building.jpg"></ion-img>
+      <div> 
+          <p id="notif">As the school year nears its end, Conde Labac
+          Labac Integrated School congratulates the Graduates
+          of Class 2022-2023!
+
+          We will see you on July 10, 2023 - 9:00 AM at the 
+          Conde Labac Integrated School Gymnasium for
+          the Graduation rites
+          </p>
+        <ion-img id ="banner"  src ="../../assets/image/banner.jpg"></ion-img>
+
+        <div id ="banner-bottom">
+          <ion-img src = "../../assets/image/ann.png"></ion-img>
+          <p>Ad excellentiam et felicitatem, Seniors!</p>
+        </div>
+      </div>
+    </div>
+  </ion-row>
+
+</ion-grid>

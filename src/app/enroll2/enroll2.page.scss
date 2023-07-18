@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #0097b2, #00acb3, #00bea3, #24ce82, #7ed957);
+    padding: .5em 1em;
+}
+#header > ion-img{
+    width: 10%;
+    height: auto;
+    margin-right: .8em;
+    
+}
+
+#header > h6{
+    font: normal 14px Poppins-Medium;
+    color: white;
+}
+
+
+ion-label{
+    font: bold 13px Poppins;
+    margin: 0 2em 0 2em;
+    
+}
+
+#year > p,
+#name > p,
+#grade > p,
+#lrn > p
+{
+    font: normal 13px Poppins;
+
+}

@@ -9,13 +9,17 @@ export class SpinnerPage implements OnInit {
 
   constructor(private router: Router) {}
   ngOnInit() {
-    setInterval(() => {
 
-      // this.router.navigate(['/dashboard'])
-    },1000
-    );
   }
 
+  goToEnrollment(){
+
+    this.router.navigateByUrl("enroll");
+  }
+  goToLogin(){
+
+    this.router.navigateByUrl("home");
+  }
 
 
 }

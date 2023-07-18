@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'spinner',
     pathMatch: 'full'
   },
   {
@@ -54,6 +54,14 @@ const routes: Routes = [
   {
     path: 'tab1',
     loadChildren: () => import('./tab1/tab1.module').then( m => m.Tab1PageModule)
+  },
+  {
+    path: 'enroll',
+    loadChildren: () => import('./enroll/enroll.module').then( m => m.EnrollPageModule)
+  },
+  {
+    path: 'enroll2',
+    loadChildren: () => import('./enroll2/enroll2.module').then( m => m.Enroll2PageModule)
   },
 ];
 

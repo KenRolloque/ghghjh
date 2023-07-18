@@ -7,9 +7,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1Page implements OnInit {
 
+    hideMission: boolean =false;
+    hideVision:boolean = false;
+    hideCore: boolean = false;
+
+
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  showMission(){
+
+    this.hideMission = true;
+    this.hideVision = false;
+    this.hideCore = false;
+
+  }
+
+  showVision(){
+    this.hideMission = false;
+    this.hideVision = true;
+    this.hideCore = false;
+  }
+
+  showCore(){
+    this.hideMission = false;
+    this.hideVision = false;
+    this.hideCore = true;
+  }
+
+  
 
 }

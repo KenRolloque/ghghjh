@@ -1,0 +1,92 @@
+<ion-grid>
+
+  <ion-row id ="header">
+      <ion-img src ="../../assets/image/logo.png"> </ion-img>
+      <h6> ENROLLMENT </h6>
+  </ion-row>
+
+  <ion-row id ="reminder"> 
+      <div>
+
+          <p>The Enrollment for the School Year 2023-2024 of 
+            incoming Grades 7 to 10, and Senior High School 
+            Grade11 to 12 learners will conducted from <b>May 10 </b>
+            to <b>June 9, 2023.</b>
+          </p>
+      </div>
+  </ion-row>
+
+
+  <ion-row id ="procedure">
+      <div>
+
+        <div id ="notice">
+           <p> Please fill the following form</p>
+        </div>
+        <div id ="lrn">
+          <ion-item>
+            <ion-label> LRN</ion-label>
+            <ion-input type ="number"></ion-input>
+          </ion-item>
+        </div>
+
+        <div id ="lname">
+          <ion-item>
+            <ion-input label ="Lastname"></ion-input>
+          </ion-item>
+        </div>
+
+        <div id ="fname">
+          <ion-item>
+            <ion-input label ="Firstname" ></ion-input>
+          </ion-item>
+        </div>
+        
+        <div id ="mi">
+          <ion-item>
+            <ion-input label ="Middle Initial" ></ion-input>
+          </ion-item>
+        </div>
+
+
+        
+
+        <div id ="year">    
+          <ion-item>
+            <ion-select label="Year" placeholder="2023-2024 (1st Sem)">
+              <ion-select-option value="grade7">2023-2024 (1st Sem)</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+
+        <div id ="grade">
+          <ion-item>
+            <ion-select label="Grade" placeholder="Select Year">
+              <ion-select-option value="grade7">Grade 7</ion-select-option>
+              <ion-select-option value="grade8">Grade 8</ion-select-option>
+              <ion-select-option value="grade9">Grade 9</ion-select-option>
+              <ion-select-option value="grade10">Grade 10</ion-select-option>
+              <ion-select-option value="grade11">Grade 11</ion-select-option>
+              <ion-select-option value="grade12">Grade 12</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+  
+        <div id ="strand">
+          <ion-item>
+            <ion-select label="Strand" placeholder="Select Strand">
+              <ion-select-option value="STEM">STEM</ion-select-option>
+              <ion-select-option value="ABM">ABM</ion-select-option>
+              <ion-select-option value="HUMMS">HUMMS</ion-select-option>
+              <ion-select-option value="ICT">ICT</ion-select-option>
+
+            </ion-select>
+          </ion-item>
+        </div>
+
+        <ion-button id ="next-bttn" (click) = "goToEnroll2()"> Next</ion-button>
+      </div>
+  </ion-row>
+
+
+</ion-grid>
