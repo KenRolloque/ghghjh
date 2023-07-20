@@ -21,5 +21,8 @@ export class SpinnerPage implements OnInit {
     this.router.navigateByUrl("home");
   }
 
+  goToAdmin(){
+    this.router.navigateByUrl("admin");
+  }
 
 }

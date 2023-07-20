@@ -63,6 +63,30 @@ const routes: Routes = [
     path: 'enroll2',
     loadChildren: () => import('./enroll2/enroll2.module').then( m => m.Enroll2PageModule)
   },
+  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
+  {
+    path: 'submitform',
+    loadChildren: () => import('./submitform/submitform.module').then( m => m.SubmitformPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'admin-dashboard',
+    loadChildren: () => import('./admin-dashboard/admin-dashboard.module').then( m => m.AdminDashboardPageModule)
+  },
+  {
+    path: 'admin-enroll',
+    loadChildren: () => import('./admin-enroll/admin-enroll.module').then( m => m.AdminEnrollPageModule)
+  },
+  {
+    path: 'admin-form',
+    loadChildren: () => import('./admin-form/admin-form.module').then( m => m.AdminFormPageModule)
+  },
 ];
 
 @NgModule({

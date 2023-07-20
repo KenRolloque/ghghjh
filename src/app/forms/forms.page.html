@@ -1,27 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>forms</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-grid>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Forms</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-row id ="header">
+      <ion-img src ="../../assets/image/logo.png"> </ion-img>
+      <h6> FORMS </h6>
+  </ion-row>
 
-  <ion-grid id = "main-container">
+  <ion-row id ="guide-row">
+    <div>
+      <h5>Request forms to registrar</h5>
+      <p> Select what document you needed and fill up the information below.</p>
+  </div>
+  </ion-row>
 
-    <ion-row>
-      <ion-col id ="login-form">
-        <ion-label> FIll up</ion-label>
-        <ion-input  label="Fullname" type="text" label-placement="floating" placeholder="Enter your Fullname"></ion-input>
-        <ion-input  label="Email" type="mail" label-placement="floating" placeholder="Enter your Email"></ion-input>
-        <ion-input  label="Confirm Password" type="password" label-placement="floating" placeholder="Confirm Password"></ion-input>
-        <ion-button id ="signup-bttn">COnfirm</ion-button>
-      </ion-col>
+  <ion-row id ="input-row">
 
-    </ion-row>
-  </ion-grid> 
-</ion-content>
+    <div>
+      <ion-input label="Name" label-placement="floating" fill="outline" placeholder="Enter name"></ion-input>
+      <ion-input label="LRN"  type ="number" label-placement="floating" fill="outline" placeholder="Enter LRN"></ion-input>
+      <ion-input label="Email" label-placement="floating" fill="outline" placeholder="Enter Email"></ion-input>
+
+     <ion-select label="Form" placeholder="Select Form">
+      <ion-select-option value="goodmoral">Good Moral</ion-select-option>
+      <ion-select-option value="form137">Form 137</ion-select-option>
+      <ion-select-option value="cog">Copy of Grades</ion-select-option>
+      <ion-select-option value="cor">Certificate of Registration</ion-select-option>
+    </ion-select>
+
+    <div id ="add-file">
+      <p>Photo of Request
+        <span>If the Form 137 is needed</span>
+      </p>
+      <ion-button> Add File</ion-button>
+    </div>
+    
+    </div>
+  </ion-row>
+
+  <ion-row id ="submit-row"> 
+    <ion-button (click) = "goToSubmit()">Submit</ion-button>
+  </ion-row>
+
+
+</ion-grid>

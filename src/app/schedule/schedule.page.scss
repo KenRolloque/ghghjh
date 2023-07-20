@@ -1,47 +1,103 @@
-.weekdays{
-    padding: 10px;
-    font-size: x-large;
-    font-style: italic; 
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.english{
-    border-style: hidden hidden hidden solid;
-    border-color: red;
-    padding-left: 20px;
+ion-grid{
+    overflow-y: scroll;
+}
+#header{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #0097b2, #00acb3, #00bea3, #24ce82, #7ed957);
+    padding: .5em 1em;
+}
+#header > ion-img{
+    width: 10%;
+    height: auto;
+    margin-right: .8em;
+    
 }
 
-.math{
-    border-style: hidden hidden hidden solid;
-    border-color: purple;
-    padding-left: 20px;
+#header > h6{
+    font: normal 16px Poppins-Medium;
+    color: white;
 }
 
-.break{
-    border-style: hidden hidden hidden solid;
-    border-color: yellow;
-    padding-left: 20px;
+#sub-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1.5em;
+    padding: 1em 0;
 }
 
-.filipino{
-    border-style: hidden hidden hidden solid;
-    border-color: blue;
-    padding-left: 20px;
+
+
+#subjects{
+    font: normal 16px Poppins-Medium;
+    color: black;
+
 }
 
-.lunch{
-    border-style: hidden hidden hidden solid;
-    border-color: green;
-    padding-left: 20px;
+ion-card{
+    --box-shadow:0px;
 }
 
-.computer{
-    border-style: hidden hidden hidden solid;
-    border-color: pink;
-    padding-left: 20px;
+#card2, 
+#card3,
+#card4,
+#card5 {
+    width: 90%;
+    padding: 1em 2em;
+    position: relative;
+    border-left: 10px solid     ;
+    // background-color: rgb(238, 226, 254);
+    border-left: 10px solid rgb(137,55,248);
+    background: url(../../assets/image/card/violet.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card2> p ,
+#card3 >p,
+#card4 >p,
+#card5 >p
+{
+    margin-left: 1em;
+    font: normal 14px Poppins;
+    color: black;
+}
+#card2 > ion-img , 
+#card3 >ion-img,
+#card4 >ion-img,
+#card5>ion-img
+{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 7%;
+    height: auto;
 }
 
-.science{
-    border-style: hidden hidden hidden solid;
-    border-color: grey;
-    padding-left: 20px;
+
+#card3 {
+    border-left: 10px solid rgb(255, 150, 2);
+    background: url(../../assets/image/card/orange.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+#card4 {
+    border-left: 10px solid rgb(0, 218, 200);
+    background: url(../../assets/image/card/green.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card5 {
+    border-left: 10px solid rgb(254, 68, 0);
+    background: url(../../assets/image/card/red.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+

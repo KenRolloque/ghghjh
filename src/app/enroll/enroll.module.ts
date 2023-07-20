@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { EnrollPageRoutingModule } from './enroll-routing.module';
-
+import { NavParams } from '@ionic/angular';
 import { EnrollPage } from './enroll.page';
 
 @NgModule({

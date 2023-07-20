@@ -41,3 +41,14 @@
     font-family: 'Poppins-Medium';    //This is what we are going to call
     src: url('assets/Poppins/Poppins-Medium.ttf');
   }
+
+  .my-custom-toast{
+    --color:rgb(137, 0, 0);
+    font:normal 14px Poppins;
+  
+
+}
+
+.confirmAlert{
+
+}
