@@ -43,12 +43,13 @@
   }
 
   .my-custom-toast{
-    --color:rgb(137, 0, 0);
+    --color:rgb(192, 0, 0);
     font:normal 14px Poppins;
-  
-
 }
 
+ion-toast{
+  --background:rgb(244, 244, 244);
+}
 .confirmAlert{
 
 }
